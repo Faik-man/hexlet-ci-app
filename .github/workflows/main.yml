@@ -17,4 +17,6 @@ jobs:
         run: make test
       - name: Lint project
         run: make lint
+      - name: Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
       - run: echo "🍏 This job's status is ${{ job.status }}."
