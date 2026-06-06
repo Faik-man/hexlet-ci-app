@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
+      - name: Setup NodeJS
+        uses: actions/setup-node@v6
       - name: Setup project
         run: make setup
       - name: Test project
